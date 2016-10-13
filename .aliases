@@ -47,5 +47,9 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 # Canonical hex dump; some systems have this symlinked
 command -v hd > /dev/null || alias hd="hexdump -C"
 
+# OS X like clipboard commands
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
